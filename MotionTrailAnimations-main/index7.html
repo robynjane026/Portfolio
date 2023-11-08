@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<meta name="description" content="Ideas for Motion Trail Animations on Images" />
+	<meta name="keywords" content="motion trail, image animation, gsap, javascript, mouse trail" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="./landingpage/land08.png">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	
+	<script>document.documentElement.className = "js";</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-124048250-1');
+	</script>
+
+	<style>
+
+@font-face {
+        font-family: gothic01;
+        src: url(./Fonts2/OPTIFuturaDemiBold.otf);
+    }
+
+    @font-face {
+        font-family: gothic02;
+        font-size: 38px;
+        src: url(./Fonts2/SansSerifBookFLF.otf);
+    }
+
+	
+	.navbar{
+    position: fixed;
+    height: auto;
+    width: 100%;
+      display: flex;
+      font-size: 24px;
+      color: white;
+      z-index: 1000;
+      background-image: linear-gradient(to right, #000000, rgb(57, 56, 56));
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+          transition: all 0.4s ease;
+  }
+  .projbtns01 {
+    position: relative;
+    /* padding: 1%; */
+    width: auto;
+    height: auto;
+    /* background-color: #fff; */
+    /* Adjust right property as needed */
+    right: -76rem;
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center; /* Center vertically */
+  }
+  .logo01{
+    position: relative;
+  /* padding: 0.5%; */
+  scale: 0.4;
+  left: -3.5%;
+  }
+
+  .projects {
+    position: relative;
+    scale: 0.8;
+    padding: 1%;
+    transition: transform 0.3s ease;
+    /* background-color: #130202; */
+  }
+
+  .about {
+    position: relative;
+    scale: 0.8;
+    padding: 1%;
+    transition: transform 0.3s ease;
+    /* background-color: #130202; */
+  }
+
+  .showreel {
+    position: relative;
+    scale: 0.8;
+    padding: 1%;
+    transition: transform 0.3s ease;
+    /* background-color: #130202; */
+  }
+
+  
+  .projects:hover, .about:hover, .showreel:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+
+		.slider {
+			position: relative;
+			/* display: block; */
+			/* width: 20rem; */
+			width: 88vw;
+			height: auto;
+			top: -10rem;
+			/* height: 100vh; */
+
+
+		}
+
+		.slider__nav-bar {
+			position: absolute;
+			width: 218px;
+			height: 180px;
+			bottom: -5%;
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: 90px;
+			text-align: center;
+			/* background: #dde3e6; */
+			z-index: 100;
+			scale: 0.9;
+		}
+
+		.slider__arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 64px;
+			height: 64px;
+			transition: 0.2s;
+			cursor: pointer;
+			z-index: 100;
+			opacity: 0.8;
+			scale: 0.9;
+		}
+
+		.slider__arrow:hover {
+			opacity: 1;
+		}
+
+		.slider__arrow_prev {
+			left: 16px;
+			width: 64px;
+			height: 64px;
+			background-image: url(./img/projectselect/leftarrow.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 64px;
+			scale: 0.9;
+		}
+
+		.slider__arrow_next {
+			right: 16px;
+			width: 64px;
+			height: 64px;
+			background-image: url(./img/projectselect/rightarrow.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 64px;
+			scale: 0.9;
+		}
+
+		.nav-control {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			opacity: 0.5;
+			width: 32px;
+			height: 32px;
+			transition: 0.2s;
+			cursor: pointer;
+			background-image: url(./img/projectselect/navactive.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 26px 26px;
+			margin-top: 32px;
+			z-index: 3;
+			scale: 0.9;
+		}
+
+		.content{
+			background-image: linear-gradient(to right, #000000, #2e2c2c);
+		}
+
+
+
+	
+
+		.nav-control:hover {
+			opacity: 0.8;
+		}
+
+		.nav-control_active {
+			opacity: 1;
+		}
+
+		.slider-list {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			scale: 0.9;
+			top: -8rem;
+		}
+
+		.slider-list::before {
+			content: '';
+			display: block;
+			padding-top: calc(9 / 16 * 100%);
+		}
+
+		.slider-list__item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 16vw;
+			color: #000;
+			will-change: transform;
+			z-index: 1;
+		}
+
+		.slider-list__item .back__element {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+
+		.slider-list__item .back__element img {
+			position: relative;
+			display: block;
+			width: 100%;
+			max-width: 640px;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.slider-list__item .main__element {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 3;
+		}
+
+		.slider-list__item .main__element img {
+			position: relative;
+			display: block;
+			width: 100%;
+			max-width: 320px;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.slider-list__item .front__element {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 4;
+			/* transform: scale(0); */
+		}
+
+		.slider-list__item .front__element img {
+			position: relative;
+			display: block;
+			width: 100%;
+			max-width: 640px;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.slider-list__item .title__element {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+		}
+
+		.slider-list__item .title__element .title {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: rotate(-15deg) translate(-45%, -125%);
+			/* font-family: 'Molle', cursive; */
+			color: #eef2f3;
+			text-align: center;
+		}
+
+		.slider-list__item .more__element {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 10;
+		}
+
+		.slider-list__item .more__element .content {
+			position: relative;
+			display: block;
+			width: 100%;
+			max-width: 768px;
+			height: auto;
+			margin: 64px auto;
+			padding: 0 32px;
+			color: #2e3131;
+			text-align: left;
+		}
+
+		.slider-list__item .more__element .content .headline {
+			position: relative;
+			display: block;
+			max-width: 240px;
+			font-family: 'Molle', cursive;
+			font-size: 38px;
+			line-height: 46px;
+		}
+
+		.slider-list__item .more__element .content .excerpt {
+			position: relative;
+			display: block;
+			max-width: 240px;
+			/* font-family: 'Open Sans Condensed', sans-serif; */
+			font-size: 16px;
+			line-height: 24px;
+			padding: 8px 0 16px;
+		}
+
+		.slider-list__item .more__element .content .link {
+			position: relative;
+			display: block;
+			/* font-family: 'Open Sans Condensed', sans-serif; */
+			width: 180px;
+			height: 48px;
+			border-radius: 24px;
+			font-size: 16px;
+			line-height: 24px;
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+			transition: all 0.4s ease;
+		}
+
+		
+
+		.link{
+			display: flex;
+    align-items: center; /* Add this line for vertical centering */
+    /* bottom: -5%; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    z-index: 500;
+    top: 650px;
+    position: relative;
+    /* margin-left: 40% ;
+    margin-right: 40%;
+    display: block; */
+    font-family: gothic01;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    width: 168px;
+    height: 48px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    background-image: linear-gradient(to right, #000000, #6d6a6a);
+    background-size: 150% 150%;
+    -webkit-animation: gradient 3s ease infinite;
+    -moz-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+		}
+
+		.slider-list__item .more__element .content .link .fill {
+			position: absolute;
+			background-image: linear-gradient(to right, #000000, #6d6a6a);
+			background-size: 150% 150%;
+			height: 48px;
+			width: 180px;
+			border-radius: 24px;
+			margin: 0;
+			z-index: -1;
+			transition: all 0.4s ease;
+			-webkit-animation: gradient 3s ease infinite;
+			-moz-animation: gradient 3s ease infinite;
+			animation: gradient 3s ease infinite;
+		}
+
+		.slider-list__item .more__element .content .link .fill.fill-dark {
+			background-image: linear-gradient(to right, #252228, #848f9e);
+		}
+
+		.slider-list__item .more__element .content .link a {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #dde3e6;
+			font-weight: 700;
+			text-align: center;
+			line-height: 48px;
+			text-decoration: none;
+			outline: 0px none;
+			outline: 0px;
+			z-index: 2;
+		}
+
+		.slider-list__item .more__element .content .link:hover {
+			box-shadow: 0 19px 38px rgba(0, 0, 0, 0.05), 0 15px 12px rgba(0, 0, 0, 0.06);
+		}
+
+		.slider-list__item_active {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			z-index: 2;
+		}
+
+
+		@media screen and (max-width: 640px) {
+
+			.slider-list__item .title__element .title {
+				font-size: 26vw;
+			}
+
+			.slider-list__item .more__element .content .excerpt {
+				display: none;
+			}
+
+			.slider-list__item .more__element .content .link {
+				margin-top: 16px;
+			}
+
+		}
+
+		@media screen and (max-width: 560px) {
+
+			.slider__nav-bar {
+				/* hide dots for mobile */
+				opacity: 0;
+				z-index: -1;
+			}
+
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		
+ /* ---------------------footer---------------------------------------------- */
+
+ .footer{
+	position: absolute;
+  height: auto;
+  width: 100%;
+    display: flex;
+    font-size: 24px;
+    color: white;
+    z-index: 100;
+    border-radius: 0 0 50px 50px;
+    background-image: linear-gradient(to right, #000000, rgb(87, 87, 87));
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+        transition: all 0.4s ease;
+ }
+
+ .logo{
+  position: relative;
+  padding: 1%;
+  scale: 1;
+  /* background-color: #fff; */
+ } 
+
+ .logo02{
+  position: relative;
+  padding: 2%;
+  scale: 1;
+  /* background-color: #fff; */
+  width: 20%;
+ }
+ 
+ .insta{
+  position: relative;
+  padding: 1%;
+  scale: 0.8;
+  height: auto;
+ }
+
+ .linkedin{
+  position: relative;
+  padding: 1%;
+  scale: 0.8;
+  height: auto;
+ }
+
+ .milanote{
+  position: relative;
+  padding: 1%;
+  scale: 0.8;
+  height: auto;
+ }
+
+ /* .projbtns{
+  position: relative;
+  padding: 1%;
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+  right: 0%;
+ }
+
+ .nxtproj{
+  position: relative;
+  display: flex;
+  scale: 0.8;
+  right: -72.5%;
+  background-color: #130202;
+} */
+
+.projbtns {
+  position: relative;
+  padding: 1%;
+  width: 50%;
+  height: auto;
+  /* background-color: #fff; */
+  /* Adjust right property as needed */
+  right:-2rem;
+  display: flex;
+  /* justify-content: center;  */
+  align-items: center; /* Center vertically */
+}
+
+.nxtproj {
+  position: relative;
+  scale: 0.8;
+  right: -72.5%;
+  /* background-color: #130202; */
+}
+
+.projdivider{
+  position: relative;
+  scale: 0.8;
+  /* background-color: #130202; */
+  right: -20.8rem;
+}
+
+.prevproj{
+  position: relative;
+  scale: 0.8;
+  /* background-color: #130202; */
+  right: 2.8rem;
+}
+
+.insta, .linkedin, .milanote, .nxtproj, .prevproj {
+  position: relative;
+  padding: 1%;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling on hover */
+}
+
+.insta:hover, .linkedin:hover, .milanote:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+ .nxtproj:hover, .prevproj:hover {
+  transform: scale(1.01); /* Scale up on hover */
+}
+
+	</style>
+
+</head>
+
+<body class="demo-7 loading">
+
+   <!-- -----------------Nav Bar--------------------------------------------------------------->
+   <section class="navbar">
+    <img src="./ASSETS/img/footer/logo.png" alt="Robyn Jane Logo" class="logo">
+    <div class="projbtns01">
+        <div class="projects">Projects</div>
+        <div class="about">About</div>
+        <div class="showreel">Showreel</div>
+        
+   </div>
+</section>
+        <!-- ----------------------------------------------------------------------------------->
+
+
+
+	<!-- <div class="menubar">
+		<img src="./img/logo.png" alt="" class="logo">
+		
+	</div> -->
+
+	<main>
+		<!-- <div class="frame">
+				<h1 class="frame__title">Motion Trail Animations</h1> 
+				<a class="frame__prev" href="https://tympanus.net/Tutorials/WebGLLensRefraction/">Previous demo</a>
+				<a class="frame__back" href="https://tympanus.net/codrops/?p=74079">Article</a>
+			</div> -->
+		<!-- <nav class="demos">
+				<span>Variations </span>
+				<a href="index.html" class="demo">1</a>
+				<a href="index2.html" class="demo">2</a>
+				<a href="index3.html" class="demo">3</a>
+				<a href="index4.html" class="demo">4</a>
+				<a href="index5.html" class="demo">5</a>
+				<a href="index6.html" class="demo">6</a>
+				<a href="index7.html" class="demo demo--current">7</a>
+				<a href="index8.html" class="demo">8</a>
+				<a href="index9.html" class="demo">9</a>
+			</nav> -->
+		<div class="meta">
+			<!-- <h2 class="meta__title">Persistance</h2> -->
+			<!-- <p class="meta__subtitle">Using a blend mode with images remaining</p> -->
+		</div>
+
+
+		<div class="content">
+
+			<img src="./img/landtitle.png" alt="Hello I'm Robyn Jane" class="header">
+
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land01.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land02.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land03.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land04.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land06.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land09.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land10.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land11.png)"></div>
+			</div>
+			<div class="content__img">
+				<div class="content__img-inner" style="background-image:url(./landingpage/land12.png)"></div>
+			</div>
+
+			<div class="projectselect">
+
+				<div class="page-wrapper">
+
+					<div class="slider">
+
+						<ul class="slider-list">
+
+							<li class="slider-list__item  ">
+								<span class="back__element">
+									<img src="./img/projectselect/ev01back.png" />
+								</span>
+								<span class="main__element">
+									<img src="./img/projectselect/ev01item.png" />
+								</span>
+								<span class="front__element">
+									<img src="./img/projectselect/ev01front.png" />
+								</span>
+								<!-- <span class="title__element">
+				<span class="title">apple</span>
+			  </span> -->
+								<span class="more__element">
+									<!-- <span class="content"> -->
+										<!-- <span class="headline">apple</span> -->
+										<!-- <span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span> -->
+										<!-- <span class="link">
+											<div class="fill"></div>
+											<a href="#">Open catalog</a>
+										</span> -->
+									<!-- </span> -->
+									
+								<span class="link">
+									<div class="fill"></div>
+									<a href="../Beacon.html" class="projtitle">UX UI Design</a>
+								</span>
+								</span>
+
+
+							</li>
+
+							
+
+							<li class="slider-list__item">
+								<span class="back__element">
+									<img src="./img/projectselect/AI back.png" />
+								</span>
+								<span class="main__element">
+									<img src="./img/projectselect/AIMain.png" />
+								</span>
+								<span class="front__element">
+									<img src="./img/projectselect/AIfront.png" />
+								</span>
+								<!-- <span class="title__element">
+				<span class="title">grapes</span>
+			  </span> -->
+								<span class="more__element">
+									<!-- <span class="content">
+										<span class="headline">grapes</span>
+										<span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+										<span class="link">
+											<div class="fill fill-dark"></div>
+											<a href="#">Open catalog</a>
+										</span>
+									</span> -->
+
+									<span class="link">
+										<div class="fill"></div>
+										<a href="../AIExperimentalWebsite.html" class="projtitle">EXPERIMENTAL WEBSITE</a>
+									</span>
+
+								</span>
+							</li>
+
+							<li class="slider-list__item">
+								<span class="back__element">
+									<img src="./img/projectselect/JISBack.png" />
+								</span>
+								<span class="main__element">
+									<img src="./img/projectselect/JISMain.png" />
+								</span>
+								<span class="front__element">
+									<img src="./img/projectselect/JISFront.png" />
+								</span>
+								<!-- <span class="title__element">
+				<span class="title">strawberry</span>
+			  </span> -->
+								<span class="more__element">
+									<!-- <span class="content">
+										<span class="headline">strawberry</span>
+										<span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+										<span class="link">
+											<div class="fill"></div>
+											<a href="#">Open catalog</a>
+										</span> -->
+
+										<span class="link">
+											<div class="fill"></div>
+											<a href="#" class="projtitle">MOTION GRAPHICS</a>
+										</span>
+
+									</span>
+								</span>
+							</li>
+
+							<li class="slider-list__item">
+								<span class="back__element">
+									<img src="./img/projectselect/NOVABack.png" />
+								</span>
+								<span class="main__element">
+									<img src="./img/projectselect/NOVAMain.png" />
+								</span>
+								<span class="front__element">
+									<img src="./img/projectselect/NOVAFront.png" />
+								</span>
+								<!-- <span class="title__element">
+				<span class="title">strawberry</span>
+			  </span> -->
+								<span class="more__element">
+									<!-- <span class="content">
+										<span class="headline">strawberry</span>
+										<span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+										<span class="link">
+											<div class="fill"></div>
+											<a href="#">Open catalog</a>
+										</span>
+									</span> -->
+
+									<span class="link">
+										<div class="fill"></div>
+										<a href="#" class="projtitle">GAME DESIGN</a>
+									</span>
+
+								</span>
+							</li>
+
+							<li class="slider-list__item  ">
+								<span class="back__element">
+									<img src="./img/projectselect/POTBack.png" />
+								</span>
+								<span class="main__element">
+									<img src="./img/projectselect/POTMain.png" />
+								</span>
+								<span class="front__element">
+									<img src="./img/projectselect/POTFront.png" />
+								</span>
+								<!-- <span class="title__element">
+				<span class="title">apple</span>
+			  </span> -->
+								<span class="more__element">
+									<!-- <span class="content">
+										<span class="headline">apple</span>
+										<span class="excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Illo ratione nisi perferendis? Nemo in accusamus cupiditate officiis.</span>
+										<span class="link">
+											<div class="fill"></div>
+											<a href="#">Open catalog</a>
+										</span>
+									</span> -->
+
+									<span class="link">
+										<div class="fill"></div>
+										<a href="#" class="projtitle">SHORT FILM</a>
+									</span>
+
+								</span>
+							</li>
+
+
+
+						</ul>
+
+						<div class="slider__nav-bar">
+							<a class="nav-control"></a>
+							<a class="nav-control"></a>
+							<a class="nav-control"></a>
+							<a class="nav-control"></a>
+							<a class="nav-control"></a>
+							
+						</div>
+
+						<div class="slider__controls">
+							<a class="slider__arrow slider__arrow_prev"></a>
+							<a class="slider__arrow slider__arrow_next"></a>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div> <!--/content-->
+
+
+	</main>
+
+	<section class="footer">
+		<img src="./assets/img/footer/logo.png" alt="Robyn Jane Logo" class="logo02">
+		<img src="./assets/img/footer/insta.png" alt="Instagram Link" class="insta">
+		<img src="./assets/img/footer/linkedin.png" alt="Linked In Link" class="linkedin">
+		<img src="./assets/img/footer/mila.png" alt="Milanote Link" class="milanote">
+		<div class="projbtns">
+			<img src="./assets/img/footer/nextproj.png" alt="Next Project" class="nxtproj">
+			<img src="./assets/img/footer/footerdiv.png" alt="A line divider" class="projdivider">
+			<img src="./assets/img/footer/prevproj.png" alt="Previous Project" class="prevproj">
+		</div>
+
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+	<script src="assets/js/demo.js"></script>
+
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/gsap.min.js"></script>
+	<script type="module" src="js/demo1/index.js"></script>
+</body>
+
+</html>
