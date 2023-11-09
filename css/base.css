@@ -323,6 +323,7 @@ body #cdawrap {
 	position: relative;
 /* background-color: #b28181; */
 	width: 60%;
+	font-size: 25px;
 	z-index: 500;
 	top: -8rem;
 	/* left: 16rem; */
