@@ -11,11 +11,28 @@ body {
     /* font-family: 'Gothic A1', sans-serif;
     font-family: "chantal", sans-serif; */
 font-family: gothic02;
+font-size: 18px;
   }
+  @font-face {
+    font-family: gothic01;
+    src: url(./Fonts2/OPTIFuturaDemiBold.otf);
+    font: 18px;
+}
+
+@font-face {
+    font-family: gothic02;
+    font-size: 38px;
+    src: url(./Fonts2/SansSerifBookFLF.otf);
+}
 
 h1{
     font: gothic01;
     font-size: 18px;
+}
+
+h2{
+  font: gothic02;
+  font-size: 25px;
 }
 
 a {
@@ -69,21 +86,25 @@ a {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
           transition: all 0.4s ease;
   }
+  
   .projbtns01 {
     position: relative;
-    /* padding: 1%; */
     width: auto;
     height: auto;
     /* background-color: #fff; */
-    /* Adjust right property as needed */
-    right: -62.5%;
+    right: -60rem;
     display: flex;
-    /* justify-content: center;  */
-    align-items: center; /* Center vertically */
+    align-items: center; 
   }
+
   .logo01{
     position: relative;
-  /* padding: 0.5%; */
+  scale: 0.4;
+  left: -3.5%;
+  }
+
+  .logo02{
+    position: relative;
   scale: 0.4;
   left: -3.5%;
   }
@@ -185,7 +206,7 @@ a {
   /* background-color: #fff; */
   width: auto;
   height: 10%;
-  z-index: 10;
+  z-index: 2;
   top: 53%; left: 50%;
   transform: translate( -50%, -50% );
 }
@@ -213,6 +234,7 @@ a {
     z-index: 9;
     width: 70%;
     height: 60%;
+    font: 18px;
         /* top: 0%;
     left: 0%; */
     /* background-color: rgb(0, 0, 0); */
@@ -228,6 +250,8 @@ a {
 
 .grid_container01 > div {
     z-index: 9;
+    font: 18px;
+    
     /* background-color: #992a2a; */
     
     /* padding: 20px 0; */
@@ -316,7 +340,7 @@ a {
    
 .grid_container02 {
     position: relative;
-    
+    font: 18px;
     z-index: 9;
     width: 100%;
     height: 15%;
@@ -339,7 +363,8 @@ a {
     /* background-color: rgba(183, 65, 65, 0.8); */
     text-align: center;
     /* padding: 20px 0; */
-    font-size: 30px;
+    /* font-size: 30px; */
+    font: 18px;
     color: #ebedee;
 }
 
@@ -535,6 +560,7 @@ a {
     z-index: 9;
     width: 100%;
     height: 15%;
+    font: 18px;
     /* top: 0%;
     left: 0%; */
     /* background-color: rgb(0, 0, 0); */
@@ -555,7 +581,8 @@ a {
     /* background-color: rgba(183, 65, 65, 0.8); */
     text-align: center;
     /* padding: 20px 0; */
-    font-size: 30px;
+    /* font-size: 30px; */
+    font: 18px;
     color: #ebedee;
 }
 
@@ -798,6 +825,7 @@ opacity: 0;
   z-index: 9;
   width: auto;
   height: auto;
+  font: 18px;
       /* top: 0%;
   left: 0%; */
   /* background-color: rgb(198, 157, 157); */
@@ -822,6 +850,7 @@ opacity: 0;
 
 .grid_container04 > div {
   z-index: 9;
+  font-size: 18px;
   /* background-color: #992a2a; */
   
   /* padding: 20px 0; */
@@ -832,28 +861,28 @@ opacity: 0;
 .header{
   grid-area: header;
   font-family: gothic01;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 }
 
 .header02{
   grid-area: header02;
   font-family: gothic01;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 }
 
 .header03{
   grid-area: header03;
   font-family: gothic01;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 }
 
 .header04{
   grid-area: header04;
   font-family: gothic01;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -924,9 +953,9 @@ opacity: 0;
 }
 
 .block05 {
-  grid-area: block05; /* Place the image in the second row */
-  /* height: 20%; */
-  /* background-color: #2e3336; */
+  grid-area: block05;
+  height: 20%;
+  background-color: #2e3336;
 }
 
 .block06 {
@@ -1096,10 +1125,11 @@ opacity: 0;
   height: auto;
   /* background-color: #fff; */
   /* Adjust right property as needed */
-  right: 0;
+  right: -7rem;
   display: flex;
   /* justify-content: center;  */
   align-items: center; /* Center vertically */
+  scale: 0.8;
 }
 
 .nxtproj {
@@ -1270,6 +1300,7 @@ opacity: 0;
 .explainerbtnimg{
   scale: 0.8;
   transition: transform 0.5s;
+  z-index: 1;
 }
 
 .explainerbtnimg:hover {
@@ -1412,7 +1443,7 @@ opacity: 0;
   /* background-color: #fff; */
   width: auto;
   height: 10%;
-  z-index: 10;
+  z-index: 1;
   top: 67%; left: 50%;
   transform: translate( -50%, -50% );
 }
@@ -1475,11 +1506,7 @@ bottom: 2.5rem;
   grid-gap: 5rem;
   /* padding: 3%; */
   grid-template-areas:
-      "header header header"
-
-
-       
-      
+      "header header header"   
   
 }
 
@@ -1508,8 +1535,147 @@ bottom: 2.5rem;
   /* width: 100%; */
   /* background-color: #fff; */
   top: 40%; 
-  left: 0%;
+  left: 3%;
   transform: translate( -50%, -50% );
   /* background-color: #fff; */
   scale: 0.6;
+}
+
+/* -------------unpacking campaign------------------ */
+
+
+
+.grid_container05 {
+  position: relative;
+  left: 50%;
+			transform: translateX(-50%);
+  z-index: 9;
+  width: auto;
+  height: auto;
+  font: 18px;
+      /* top: 0%;
+  left: 0%; */
+  /* background-color: rgb(198, 157, 157); */
+  display: grid;
+  grid-gap: 2rem;
+  /* padding: 3%; */
+  grid-template-areas:
+      "header header header"
+      "block01 block02 block03"
+      " phase01 phase01 phase01  "
+      "header07 header07 header07"
+      " phase02 nothingspace phase03 "
+      "header02 header02 header02"
+      "block04 block04 block04"
+      "header03 header03 header03"
+      "block05 block05 block05"
+      "header04 header04 header04"
+      "block06 block06 block06"
+      
+  
+}
+
+.grid_container0 > div {
+  z-index: 9;
+  font-size: 18px;
+  /* background-color: #992a2a; */
+  
+  /* padding: 20px 0; */
+}
+
+/* Adjust the grid layout for Section 1 */
+
+.header{
+  grid-area: header;
+  font-family: gothic01;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header02{
+  grid-area: header02;
+  font-family: gothic01;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header03{
+  grid-area: header03;
+  font-family: gothic01;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header04{
+  grid-area: header04;
+  font-family: gothic01;
+  font-size: 18px;
+  text-align: center;
+}
+.header07{
+  grid-area: header07;
+  font-family: gothic01;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nothingspace{
+  grid-area: nothingspace; /* Place the image in the second row */
+  height: 400px;
+  background-color: #2e3336;
+}
+
+.phase03 {
+  grid-area: phase03; /* Place the image in the second row */
+  height: 400px;
+  background-color: #2e3336;
+}
+
+.phase04 {
+  grid-area: phase04; /* Place the image in the second row */
+  height: 400px;
+  background-color: #2e3336;
+}
+.phase05 {
+  grid-area: phase05; /* Place the image in the second row */
+  height: 400px;
+  background-color: #2e3336;
+}
+.blocks{
+  position: relative;
+  width: 70%;
+  transition: transform 0.5s;
+}
+
+.blocks:hover {
+    transform: scale(1.2); /* Scale the element up when hovering */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+}
+.block01 {
+  position: relative;
+  grid-area: block01; /* Place the image in the second row */
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block02 {
+  grid-area: block02; /* Place the image in the second row */
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block03 {
+  grid-area: block03; /* Place the image in the second row */
+  height: 400px;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
