@@ -647,7 +647,7 @@ a {
   
   .slide-1 {
     /* background-image: url(http://pabook.libraries.psu.edu/palitmap/CherrySpringsRedTelescopes.jpg); */
-    background-color: #235b77;
+    background-color: #ffffff;
     
   }
 
@@ -657,17 +657,17 @@ a {
   
   .slide-2 {
     /* background-image: url(http://www.mso.anu.edu.au/galah/images/m31_gendler.jpg); */
-    background-color: #ebedee;
+    background-color: #ffffff;
   }
   
   .slide-3 {
     /* background-image: url(http://i.space.com/images/i/000/010/331/wS1/milky-way-echinopsis-atacamensis-1600.jpg?1308606679); */
-    background-color: #ebedee;
+    background-color: #ffffff;
   }
   
   .slide-4 {
     background-image: url(http://ousterhout.net/gallery/slideshows/hst/The%20Milky%20Way%20Galaxy.jpg);
-    background-color: #ebedee;
+    background-color: #ffffff;
   }
   
   /* .slide-5 {
@@ -1589,7 +1589,7 @@ bottom: 2.5rem;
 .grid_container05 > div {
   z-index: 9;
   font-size: 18px;
-  background-color: #992a2a;
+  /* background-color: #992a2a; */
   
   /* padding: 20px 0; */
 }
@@ -1628,7 +1628,7 @@ bottom: 2.5rem;
   font-family: gothic01;
   font-size: 18px;
   text-align: center;
-  background-color: #0ff;
+  /* background-color: #0ff; */
 }
 
 .nothingspace{
@@ -1750,9 +1750,127 @@ bottom: 2.5rem;
 
 /* -----carousel----------- */
 
+.mainholder02 {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  top: 32%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+ 
+}
+
 .stings{
   position: relative;
-  /* width: 100%;
-  height: 100%; */
+ width: 100%;
   /* background-color: #992a2a; */
+}
+
+/* ------final motion graphics-------- */
+
+#finalmotiongraphics{
+  background-color: #1a1a1a;
+}
+
+
+
+.grid_container06 {
+  position: relative;
+  left: 50%;
+			transform: translateX(-50%);
+  z-index: 9;
+  width: auto;
+  height: auto;
+  font: 18px;
+      /* top: 0%;
+  left: 0%; */
+  /* background-color: rgb(198, 157, 157); */
+  display: grid;
+  grid-gap: 5rem;
+  /* padding: 3%; */
+  grid-template-areas:
+      "header header header"
+      "block01 block01 block01"
+      "block02 block02 block02"
+      "block03 block03 block03"
+      
+      
+  
+}
+
+.grid_container06 > div {
+  z-index: 9;
+  font-size: 18px;
+  color: #ebedee;
+  /* background-color: #992a2a; */
+  
+  /* padding: 20px 0; */
+}
+
+/* ---------Jislaaik UIUX----------- */
+
+#uxuijislaaik{
+  background-color: #ebedee;
+}
+
+.grid_container07 {
+  position: relative;
+  /* left: 50%;
+			transform: translateX(-50%); */
+  z-index: 9;
+  width: auto;
+  height: auto;
+  font: 18px;
+      /* top: 0%;
+  left: 0%; */
+  /* background-color: rgb(198, 157, 157); */
+  display: grid;
+  grid-gap: 5rem;
+  /* padding: 3%; */
+  grid-template-areas:
+        "none"
+      " header "
+      "block06"
+      "header02"
+      "block11"
+      "block12"
+      "block13"
+      "block14"
+      
+      
+      
+  
+}
+
+.grid_container07 > div {
+  z-index: 9;
+  font-size: 18px;
+  color: #ebedee;
+  /* background-color: #992a2a; */
+  
+  /* padding: 20px 0; */
+}
+
+.block11{
+  grid-area: block11;
+  /* width: 100%; */
+}
+
+.block12{
+  grid-area: block12;
+  /* width: 100%; */
+}
+
+.block13{
+  grid-area: block13;
+  /* width: 100%; */
+}
+
+.block14{
+  grid-area: block14;
+  /* width: 100%; */
+}
+
+#altheader{
+  color: #1a1a1a;
 }
