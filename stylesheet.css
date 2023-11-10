@@ -647,7 +647,7 @@ a {
   
   .slide-1 {
     /* background-image: url(http://pabook.libraries.psu.edu/palitmap/CherrySpringsRedTelescopes.jpg); */
-    background-color: #ebedee;
+    background-color: #235b77;
     
   }
 
@@ -913,6 +913,7 @@ opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #bc6969; */
 }
 
 .block03 {
@@ -1581,21 +1582,14 @@ bottom: 2.5rem;
       "block01 block02 block03"
       " phase01 phase01 phase01  "
       "header07 header07 header07"
-      " phase02 nothingspace phase03 "
-      "header02 header02 header02"
-      "block04 block04 block04"
-      "header03 header03 header03"
-      "block05 block05 block05"
-      "header04 header04 header04"
-      "block06 block06 block06"
       
   
 }
 
-.grid_container0 > div {
+.grid_container05 > div {
   z-index: 9;
   font-size: 18px;
-  /* background-color: #992a2a; */
+  background-color: #992a2a;
   
   /* padding: 20px 0; */
 }
@@ -1634,6 +1628,7 @@ bottom: 2.5rem;
   font-family: gothic01;
   font-size: 18px;
   text-align: center;
+  background-color: #0ff;
 }
 
 .nothingspace{
@@ -1695,4 +1690,69 @@ bottom: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.colourbounce{
+  position: relative;
+  width: 50%;
+}
+
+.jisstyle{
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  left: 42%;
+  top: 27%;
+  transform: translate(-50% , -50%);
+  scale: 0.7;
+}
+
+.style {
+  position: relative;
+  grid-area: phase01; /* Place the image in the second row */
+  height: 15rem;
+  width: 100%;
+  top: 0%;
+  /* background-color: #2e3336; */
+  scale: 0.8;
+}
+
+.styleframe1{
+  position: relative;
+  grid-area: block04; /* Place the image in the second row */
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styleframe2{
+  position: relative;
+  grid-area: block05; /* Place the image in the second row */
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styleframe3{
+  position: relative;
+  grid-area: block06; /* Place the image in the second row */
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----carousel----------- */
+
+.stings{
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  /* background-color: #992a2a; */
 }
