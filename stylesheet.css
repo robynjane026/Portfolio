@@ -242,7 +242,7 @@ a {
     grid-gap: 5rem;
     /* padding: 3%; */
     grid-template-areas:
-        "header header"
+        /* "header header" */
         "image info"
         "none none"
     
@@ -271,6 +271,20 @@ a {
     height: 400px;
 }
 
+.image04 {
+  position: relative;
+    grid-area: image; /* Place the image in the second row */
+    height: 400px;
+    top: 30%;
+}
+
+.image05 {
+  position: relative;
+    grid-area: image; /* Place the image in the second row */
+    height: 400px;
+    top: 25%;
+}
+
 .africastats{
     position: relative;
     width: 25rem;
@@ -281,6 +295,14 @@ a {
     height: 400px;
     /* font-size: 18px; */
     text-align: left;
+}
+
+.info06 {
+  grid-area: info; 
+  /* background-color: #000000; */
+  height: 400px;
+  /* font-size: 18px; */
+  text-align: left;
 }
 
 .section2 {
@@ -670,6 +692,7 @@ a {
     background-color: #ffffff;
   }
   
+  
   /* .slide-5 {
     background-image: url(http://www.mpifr-bonn.mpg.de/2965076/zoom.jpg);
     background-color: #ebedee;
@@ -1033,7 +1056,7 @@ opacity: 0;
     justify-content: center;
     font-size: 24px;
     color: white;
-    border-radius: 0 0 20px 50px ;
+    /* border-radius: 0 0 20px 50px ; */
 }
 
 .blackblock{
@@ -1094,20 +1117,20 @@ opacity: 0;
  
  .insta{
   position: relative;
-  padding: 1%;
-  scale: 0.8;
+  padding: 0.5%;
+  scale: 0.5;
  }
 
  .linkedin{
   position: relative;
-  padding: 1%;
-  scale: 0.8;
+  padding: 0.5%;
+  scale: 0.5;
  }
 
  .milanote{
   position: relative;
-  padding: 1%;
-  scale: 0.8;
+  padding: 0.5%;
+  scale: 0.5;
  }
 
  /* .projbtns{
@@ -1427,6 +1450,19 @@ opacity: 0;
 .section01 {
   background-color: #1a1a1a;
   height: 67.5rem;
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  color: white;
+  z-index: 0;
+  border-radius: 50px 50px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.section01_3 {
+  background-color: #1a1a1a;
+  height: 55rem;
   width: 100%;
   display: flex;
   font-size: 24px;
@@ -1951,6 +1987,16 @@ bottom: 2.5rem;
   height: auto;
   /* background-color: #b75050; */
 }
+
+.environholder02{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+  /* background-color: #b75050; */
+}
+
+
 
 .environments{
   position: relative;
