@@ -279,7 +279,7 @@ a {
 .info {
     grid-area: info; /* Place the info in the second row */
     height: 400px;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: left;
 }
 
@@ -1494,7 +1494,7 @@ bottom: 2.5rem;
   position: relative;
   grid-area: info; /* Place the info in the second row */
   height: 400px;
-  font-size: 18px;
+  /* font-size: 18px; */
   text-align: left;
   top: 5rem;
 }
@@ -1873,4 +1873,182 @@ bottom: 2.5rem;
 
 #altheader{
   color: #1a1a1a;
+}
+
+/* ----------------------------------Nova------------------------------------- */
+
+.novamockup{
+  position: relative;
+  width: 100%;
+  scale: 1.5;
+  top: 20%;
+}
+
+.brieftxt03{
+  position: relative;
+  width: 30rem;
+  height: 5rem;
+  background: rgb(224, 209, 209)141;
+  bottom: -6rem;
+  text-align: left;
+}
+
+.ghost{
+  position: relative;
+  width: 100%;
+  scale: 0.3;
+  top: -4rem;
+  right: -5rem;
+  opacity: 0.8;
+}
+
+.info04{
+  grid-area: info02;
+  position: relative;
+  grid-area: info; /* Place the info in the second row */
+  height: 400px;
+  /* font-size: 18px; */
+  text-align: left;
+  top: 0rem;
+}
+
+#novablackbg{
+  background-color: #1a1a1a;
+  color: #ebedee;
+}
+
+.environholder{
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* background-color: #b75050; */
+}
+
+.environments{
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  /* background-color: #0ff; */
+}
+
+.header06{
+  font-family: gothic01;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  /* background-color: #b75050; */
+
+}
+
+.section2_2{
+  background-color: #ebedee;
+  height: auto;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1;
+}
+
+
+.meetthehero{
+  position: relative;
+  width: 100%;
+  scale: 0.6;
+  top: -25%;
+  right: -20%;
+}
+
+.section07_2{
+  position: relative;
+  background-color:#ebedee;
+  height: auto;
+  padding: 5rem;
+  display: flex;
+  /* top: -15rem; */
+}
+
+.characterdevimgs{
+  position: relative;
+  width: 40%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.enemy01{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.6;
+  top: 18%;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
+.enemy02{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.6;
+  top: 3%;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
+.enemy03{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.6;
+  top: -18%;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
+
+.grid_container01_2 {
+  position: relative;
+  z-index: 9;
+  width: 70%;
+  height: 100%;
+  font: 18px;
+      /* top: 0%;
+  left: 0%; */
+  /* background-color: rgb(0, 0, 0); */
+  display: grid;
+  grid-gap: 5rem;
+  /* padding: 3%; */
+  grid-template-areas:
+      "image info"
+  
+}
+
+.grid_container01_2 > div {
+  z-index: 9;
+  font: 18px;
+  
+  /* background-color: #992a2a; */
+  
+  /* padding: 20px 0; */
+}
+
+/* Adjust the grid layout for Section 1 */
+
+
+.image03 {
+position: relative;
+  grid-area: image; /* Place the image in the second row */
+  height: 800px;
+  /* width: 100%; */
+}
+
+.info05{
+  grid-area: info; /* Place the info in the second row */
+  height: 850px;
+  /* font-size: 18px; */
+  text-align: left;
 }
