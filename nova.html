@@ -25,12 +25,43 @@
         font-size: 38px;
         src: url(./Fonts/SansSerifBookFLF.otf);
     }
+
+    
+	.whoops{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cfcf;
+	display: none; 
+            text-align: center;
+			z-index: 2000;
+  }
+
+  .lookslike{
+    position: relative;
+    width: 30%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+  	transform: translate( -150%, -50% );
+  }
+
+
+        
+        @media (max-width: 1439px) {
+            .whoops {
+                display: block; /* Display when the screen width is less than 600px */
+            }
+        }
+
 </style>
 
 </head>
 <body>
 
-
+    <section class="whoops">
+        <img src="./ASSETS/placeholderscreen/Asset 30.png" alt="Your device screen size is incompatible with this website." class="lookslike">
+    </section>
     <!-- -----------------Nav Bar--------------------------------------------------------------->
 <section class="navbar">
     <img src="./ASSETS/IMGS/footer/logo.png" alt="Robyn Jane Logo" class="logo01">
