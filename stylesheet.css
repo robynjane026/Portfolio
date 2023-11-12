@@ -2526,7 +2526,7 @@ position: relative;
     left: 23.5rem;
     width: 119rem;
     color: rgb(230, 230, 230);
-    background-color: #911414;
+    /* background-color: #911414; */
     font-family: "Arial Black";
     font-size: 260px;
     z-index: 1;
