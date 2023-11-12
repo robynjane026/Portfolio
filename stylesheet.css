@@ -223,7 +223,8 @@ a {
   width: auto;
   height: 10%;
   z-index: 2;
-  top: 53%; left: 50%;
+  top: 25rem; 
+  left: 50%;
   transform: translate( -50%, -50% );
 }
 
@@ -1356,7 +1357,7 @@ opacity: 0;
   width: auto;
   height: 10%;
   z-index: 10;
-  top: 53%; 
+  top: 25rem; 
   left: 50%;
   transform: translate( -50%, -50% );
   scale: 0.6;
@@ -1510,12 +1511,12 @@ opacity: 0;
 
 .jisheader{
   position: absolute;
-  top: 35%;
+  top: 15rem;
 }
 
 .subheader02{
   position: absolute;
-  top: 57%; 
+  top: 26rem; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   width: 82rem; 
@@ -1533,7 +1534,7 @@ opacity: 0;
   width: auto;
   height: 10%;
   z-index: 1;
-  top: 67%; left: 50%;
+  top: 30rem; left: 50%;
   transform: translate( -50%, -50% );
 }
 
