@@ -2190,7 +2190,7 @@ position: relative;
   height: 10%;
   scale: 0.8;
   z-index: 1;
-  top: 75%; left: 48%;
+  top: 34rem; left: 4%;
   transform: translate( -50%, -50% );
 }
 
@@ -2457,5 +2457,23 @@ position: relative;
   /* background-color: #000000; */
 }
 
+.explainerbtn04{
+  position: absolute;
+  /* background-color: #fff; */
+  width: auto;
+  height: 10%;
+  scale: 0.8;
+  z-index: 1;
+  top: 34rem; left: 49%;
+  transform: translate( -50%, -50% );
+}
+
+.scorchylogo{
+  position: relative;
+  width: 100%;
+  scale: 0.3;
+  top: -10rem;
+  right: -8rem;
+}
 
      }

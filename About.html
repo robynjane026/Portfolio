@@ -25,6 +25,48 @@
         font-size: 38px;
         src: url(./Fonts/SansSerifBookFLF.otf);
     }
+
+    .navbar03{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0%;
+      display: flex;
+      font-size: 24px;
+      color: white;
+      z-index: 1000;
+      background-image: linear-gradient(to right, #000000, rgb(57, 56, 56));
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+          transition: all 0.4s ease;
+  }
+
+  .logo03{
+    position: relative;
+  scale: 0.4;
+  left: -3.5%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    .logo03{
+    position: relative;
+  scale: 0.4;
+  left: 0%;
+  }
+
+  .projbtns01 {
+    position: relative;
+  padding: 1%;
+  width: 10%;
+  height: auto;
+  /* background-color: #fff; */
+  right: -120rem;
+  display: flex;
+  /* justify-content: center;  */
+  align-items: center; /* Center vertically */
+    }
+
+  }
+
 </style>
 
 </head>
@@ -32,8 +74,8 @@
 
 
     <!-- -----------------Nav Bar--------------------------------------------------------------->
-<section class="navbar">
-    <img src="./ASSETS/IMGS/footer/logo.png" alt="Robyn Jane Logo" class="logo01">
+<section class="navbar03">
+    <img src="./ASSETS/IMGS/footer/logo.png" alt="Robyn Jane Logo" class="logo03">
     <div class="projbtns01">
       <a href="./index.html"><div class="projects">Home</div></a>
         <a href="./About.html"><div class="about">About</div></a>
