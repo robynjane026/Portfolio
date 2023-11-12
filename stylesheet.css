@@ -229,6 +229,17 @@ a {
   transform: translate( -50%, -50% );
 }
 
+.explainerbtn05{
+  position: absolute;
+  /* background-color: #fff; */
+  width: auto;
+  height: 10%;
+  z-index: 2;
+  top: 25rem; 
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
 .explainerbtnimg{
   scale: 0.8;
   transition: transform 0.5s;
@@ -1380,7 +1391,7 @@ opacity: 0;
   .robot1 {
     position: absolute;
     left: 11rem;
-    bottom: 3.5rem;
+    bottom: 1rem;
     width: 297px;
     height: auto;
     z-index: 10;
@@ -1390,7 +1401,7 @@ opacity: 0;
   .robot2 {
     position: absolute;
     left: 76rem;
-    bottom: 1.5rem;
+    bottom: -1rem;
     width: 10rem;
     height: 10rem;
     z-index: 22;
@@ -2476,4 +2487,75 @@ position: relative;
   right: -8rem;
 }
 
+.robot1 {
+  position: absolute;
+  left: 37rem;
+  bottom: 15.5rem;
+  width: 297px;
+  height: auto;
+  z-index: 10;
+}
+
+
+.robot2 {
+  position: absolute;
+  left: 126rem;
+  bottom: 12.5rem;
+  width: 10rem;
+  height: 10rem;
+  z-index: 22;
+  scale: 2;
      }
+
+
+     .background {
+      position: relative;
+      width: 120rem;
+      height: auto;
+  }
+
+  .headerglitch {
+    position: absolute;
+    top: 10%;
+    top: 10%;
+    left: 23.5rem;
+    width: 128rem;
+    color: rgb(230, 230, 230);
+    font-family: "Arial Black";
+    font-size: 260px;
+    z-index: 1;
+    scale: 0.4;
+  }
+  .subheader {
+    position: absolute;
+    top: 23rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82rem;
+    height: auto;
+    color: rgb(230, 230, 230);
+    font-size: 260px;
+    z-index: 1;
+    text-align: center;
+}
+
+.explainerbtn05{
+  position: absolute;
+  /* background-color: #fff; */
+  width: auto;
+  height: 10%;
+  z-index: 2;
+  top: 29rem;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
+.leroy{
+  position: relative;
+  width: 20rem;
+  bottom: -7%;
+  right: -38%;
+
+}
+
+    }
