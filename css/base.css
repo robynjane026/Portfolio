@@ -502,23 +502,24 @@ body #cdawrap {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
           transition: all 0.4s ease;
 		  left: 50%;
-		  top: 10%;
+		  top: 6%;
 			transform: translateX(-50%);
 			border-radius: 50px 50px 50px 50px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
   }
 
-  .logo02{
+ #logo02override{
     position: relative;
   scale: 0.4;
-  left: 50%;
+  left: -2%;
+  /* background-color: #fff; */
   }
 
   #linkoverride{
 	display: flex;
     align-items: center; /* Add this line for vertical centering */
     /* bottom: -5%; */
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: #000000;
     z-index: 500;
@@ -552,7 +553,7 @@ body #cdawrap {
     width: 218px;
     height: 180px;
     bottom: 18%;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     border-radius: 90px;
     text-align: center;
