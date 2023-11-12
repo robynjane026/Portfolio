@@ -1535,7 +1535,8 @@ opacity: 0;
   width: auto;
   height: 10%;
   z-index: 1;
-  top: 31rem; left: 50%;
+  top: 32rem;
+  left: 50%;
   transform: translate( -50%, -50% );
 }
 
@@ -2404,14 +2405,57 @@ position: relative;
  .thebrand{
   display: flex;
   position: relative;
+  width: 100%;
+  height: 100%;
   /* height: auto; */
   /* width: 100%; */
   /* background-color: #fff; */
   top: 40%; 
-  left: 15%;
+  left: 25rem;
   transform: translate( -50%, -50% );
   /* background-color: #fff; */
   scale: 0.6;
 }
+
+.ghost{
+  position: relative;
+  width: 100%;
+  scale: 0.2;
+  top: -10rem;
+  right: -3rem;
+  opacity: 0.8;
+}
+
+
+.enemy01{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.5;
+  top: 2rem;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
+.enemy02{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.5;
+  top: -16rem;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
+.enemy03{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  scale: 0.5;
+  top: -37rem;
+  right: -20%;
+  /* background-color: #000000; */
+}
+
 
      }
