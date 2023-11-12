@@ -459,6 +459,67 @@ body #cdawrap {
 	text-align: center;
 }
 
+
+@media screen and (min-width: 2560px) {
+
+.projectselect{
+	position: relative;
+	/* width: 100rem; */
+	padding: 5rem;
+	height: 67.5rem;
+	z-index: 200;
+	/* background-color: #401212;  */
+	top: -30%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__nav-bar {
+    position: absolute;
+    width: 218px;
+    height: 180px;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 90px;
+    text-align: center;
+    /* background: #dde3e6; */
+    z-index: 100;
+    scale: 0.9;
+
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    /* bottom: -5%; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    z-index: 500;
+    top: 922pxpx;
+    position: relative;
+    font-family: gothic01;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 168px;
+    height: 48px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    background-image: linear-gradient(to right, #000000, #6d6a6a);
+    background-size: 150% 150%;
+    -webkit-animation: gradient 3s ease infinite;
+    -moz-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+
+}
+
+}
 /* Project Select  */
 /* 
 
