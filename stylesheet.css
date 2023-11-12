@@ -2442,7 +2442,7 @@ position: relative;
   position: relative;
   width: 100%;
   /* height: 100%; */
-  scale: 0.5;
+  scale: 0.3;
   top: 2rem;
   right: -20%;
   /* background-color: #000000; */
@@ -2452,8 +2452,8 @@ position: relative;
   position: relative;
   width: 100%;
   /* height: 100%; */
-  scale: 0.5;
-  top: -16rem;
+  scale: 0.3;
+  top: -20rem;
   right: -20%;
   /* background-color: #000000; */
 }
@@ -2462,8 +2462,8 @@ position: relative;
   position: relative;
   width: 100%;
   /* height: 100%; */
-  scale: 0.5;
-  top: -37rem;
+  scale: 0.3;
+  top: -47rem;
   right: -20%;
   /* background-color: #000000; */
 }
@@ -2500,7 +2500,7 @@ position: relative;
 .robot2 {
   position: absolute;
   left: 126rem;
-  bottom: 12.5rem;
+  bottom: 15.5rem;
   width: 10rem;
   height: 10rem;
   z-index: 22;
@@ -2516,8 +2516,7 @@ position: relative;
 
   .headerglitch {
     position: absolute;
-    top: 10%;
-    top: 10%;
+    top: 6rem;
     left: 23.5rem;
     width: 128rem;
     color: rgb(230, 230, 230);
@@ -2558,4 +2557,16 @@ position: relative;
 
 }
 
+.africastats{
+position: relative;
+width: 25rem;
+top: -5rem;
+}
+
+.novamockup {
+  position: relative;
+  width: 100%;
+  scale: 1.2;
+  top: 0rem;
+}
     }
