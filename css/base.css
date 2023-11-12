@@ -498,7 +498,7 @@ body #cdawrap {
     transform: translateX(-50%);
     background-color: #000000;
     z-index: 500;
-    top: 922pxpx;
+    top: 958px;
     position: relative;
     font-family: gothic01;
     text-align: center;
@@ -516,10 +516,31 @@ body #cdawrap {
     -webkit-animation: gradient 3s ease infinite;
     -moz-animation: gradient 3s ease infinite;
     animation: gradient 3s ease infinite;
+}
+
+
+
+
+.navbar02{
+    position: absolute;
+    height: auto;
+    width: 120rem;
+      display: flex;
+      font-size: 24px;
+      color: white;
+      z-index: 1000;
+      background-image: linear-gradient(to right, #000000, rgb(57, 56, 56));
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+          transition: all 0.4s ease;
+		  left: 50%;
+		  top: 10%;
+			transform: translateX(-50%);
+			border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.06);
+  }
 
 }
 
-}
 /* Project Select  */
 /* 
 
